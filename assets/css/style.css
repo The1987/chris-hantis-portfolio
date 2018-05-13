@@ -1,0 +1,260 @@
+/* CSS Stylesheet for Chris Hantis Portfolio */
+
+* {
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+    /* border: 1px solid red; */
+}
+
+html, body {
+
+    margin:0;
+
+    padding:0;
+    height:100%; 
+
+    /* display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    min-height: 100vh; */
+}
+    
+header {
+    height: 18vh;
+    background-color: white;
+    color: greenyellow; /*Check where this is*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    nav {
+        margin-left: 30px;
+    }
+
+    header ul li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: rgba(0, 191, 114, 1);
+    }
+
+    li a:hover {
+        background-color: rgba(0, 135, 147, 1);
+        color: white;
+        /* border: 1px solid purple; */
+        padding: 10px;
+        transition: .5s;
+    }
+
+article {
+
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: row; */
+    /* flex: 2; */
+
+    /* min-height:100%;
+    position:relative; */
+}
+
+    h2 article {
+        align-items: center;
+        justify-content: center;    
+    }
+
+    #background-image {
+        /* background-image: linear-gradient(to right, rgba(5, 25, 55, 1), rgba(0, 77, 122, .8), rgba(0, 135, 147, .4), rgba(0, 191, 114, .4), rgba(168, 235, 18, 1)),
+        url('../images/bk-1.jpg'); */
+        background-image: url('../images/bk-1.JPG');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* background-size: 100%; */
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 0;
+        margin-left: 10px;
+        color: rgba(0, 135, 147, 1);
+        text-decoration: none; 
+        margin-top:0;
+        align-items: left;
+        justify-content: left;
+    }
+
+    h1 a {
+        text-decoration: none; 
+        color: rgba(0, 135, 147, 1);
+    }
+
+    h1:hover {
+        font-weight: 400; 
+        text-decoration: none; 
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 0;
+        margin-left: 10px;
+        color: rgba(0, 135, 147, 1);
+        text-decoration: none; 
+        margin-top:0;
+        align-items: left;
+        justify-content: left;
+    }
+/* 
+    h2 a {
+        text-decoration: none; 
+    }
+
+    h2:hover {
+        font-weight: 400; 
+    } */
+
+
+
+
+
+    /* button.tagline {
+        background-color: tomato;
+        font-size: 20px;
+        margin-top: 40px;
+        color: white;
+        border: none;
+        width: 300px;
+        height: 60px;
+        padding: 10px;
+        opacity: 0.9;
+        text-decoration: none;
+    } */
+
+    /* button.tagline:hover {
+        background-color: tomato;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+
+   
+    ul {
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+    } */
+
+    footer {
+        bottom: 0; 
+        background-color: white;
+        text-align: center;
+        color: rgba(0, 135, 147, 1); /* Copyright Text */
+
+        margin: 0, 40px;
+        padding: 0 10px;
+
+        /* position: absolute;
+        background: yellowgreen;
+        height: 16vh;
+        padding-top: 40px;
+        font-size: 16px;
+        color: tomato; */
+    }
+    
+    .footer-links {
+        color: rgba(0, 191, 114, 1);
+    }
+
+    /* footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        font-weight: bold;
+    } */
+
+
+    /* .left-section {
+
+        height: 100%;
+        width: 650px;
+        margin-left: 140px;
+        padding: 20px;
+        border: 1px solid grey;
+        background-color: #ffffff; White
+    }  */
+
+
+    .portfolio {
+        /* border: 1px solid red; */
+
+        width: 100%; /* Width of Container */
+        height: 100%;
+        padding: 4px;
+        overflow: auto;
+        /* margin: 2px 6px; */
+        /* text-align: center; */
+
+    }
+
+    .box {
+        width: 100%;
+        border: 1px solid white;
+        float: left;
+        margin-bottom: 20px;
+        background-color: white;
+        /* opacity: 0.8; */
+    }
+
+    .box p {
+        /* border: 1px solid red; */
+        margin-left: 26px;
+        
+    }
+
+   img {
+        border: 1px solid white;
+        float: left;
+        position: relative;
+        height: 50%;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    img:hover {
+
+        background-color:#000;
+        opacity:0.5;
+        border-radius:30px;
+    }
+      
+    /* .item {
+        position: absolute;
+        bottom: 10%;
+        background-color: #4aaaa5;
+        color: white;
+        width: 100%;
+        font-size: 20px;
+    } */
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}

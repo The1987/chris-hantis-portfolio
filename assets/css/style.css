@@ -30,7 +30,7 @@ header {
 }
 
     nav {
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     header ul li {
@@ -110,7 +110,7 @@ article {
 
     h2 {
         text-align: center;
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 300;
         margin-bottom: 0;
         margin-left: 10px;
@@ -129,79 +129,30 @@ article {
         font-weight: 400; 
     } */
 
-
-
-
-
-    /* button.tagline {
-        background-color: tomato;
-        font-size: 20px;
-        margin-top: 40px;
-        color: white;
-        border: none;
-        width: 300px;
-        height: 60px;
-        padding: 10px;
-        opacity: 0.9;
-        text-decoration: none;
-    } */
-
-    /* button.tagline:hover {
-        background-color: tomato;
-        font-weight: bold;
-        transition: 0.4s;
-    }
-
-   
-    ul {
-        margin: 0;
-        padding: 0px;
-        width: 100%;
-    } */
-
-    footer {
+    #footer {
         bottom: 0; 
         background-color: white;
         text-align: center;
         color: rgba(0, 135, 147, 1); /* Copyright Text */
-
-        margin: 0, 40px;
-        padding: 0 10px;
-
-        /* position: absolute;
-        background: yellowgreen;
-        height: 16vh;
-        padding-top: 40px;
-        font-size: 16px;
-        color: tomato; */
-    }
-    
-    .footer-links {
-        color: rgba(0, 191, 114, 1);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 40px, 10px;
+        
     }
 
-    /* footer a {
-        color: white;
+    footer a {
         text-decoration: none;
     }
 
     footer a:hover {
         font-weight: bold;
-    } */
+    }
 
+    .footer-links {
+        color: rgba(0, 191, 114, 1);
+    }
 
-    /* .left-section {
-
-        height: 100%;
-        width: 650px;
-        margin-left: 140px;
-        padding: 20px;
-        border: 1px solid grey;
-        background-color: #ffffff; White
-    }  */
-
-
-    .portfolio {
+.portfolio {
         /* border: 1px solid red; */
 
         width: 100%; /* Width of Container */
@@ -241,20 +192,41 @@ article {
 
         background-color:#000;
         opacity:0.5;
-        border-radius:30px;
+        /* border-radius:30px; */
     }
-      
-    /* .item {
-        position: absolute;
-        bottom: 10%;
-        background-color: #4aaaa5;
-        color: white;
-        width: 100%;
-        font-size: 20px;
-    } */
 
-@media screen and (max-width: 700px) {
-    .row, .navbar {   
+@media screen and (max-width: 650px) {
+    .box {
+        display: flex;
         flex-direction: column;
     }
+
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+      
+@media screen and (max-width: 438px) {
+
+    /* * {
+        border: 1px solid red;
+    } */
+
+    header, nav {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+
 }
